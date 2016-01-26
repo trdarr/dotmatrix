@@ -7,7 +7,7 @@ directory_warning
 dirty_warning
 
 old_sha=$(git rev-parse HEAD)
-git pull --rebase
+git pull hashrocket --rebase master
 new_sha=$(git rev-parse HEAD)
 
 ./bin/install
