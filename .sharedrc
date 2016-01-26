@@ -131,3 +131,4 @@ if [ "$(uname)" = Darwin -a "$(command -v vim)" = /usr/bin/vim ]; then
 fi
 
 which rbenv > /dev/null && eval "$(rbenv init -)"
+which vault > /dev/null && . "$( vault --initpath )"
