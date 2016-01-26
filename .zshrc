@@ -107,9 +107,6 @@ l.() {
   ls -ld "${1:-$PWD}"/.[^.]*
 }
 
-# rvm-install added line:
-if [[ -s "$HOME/.rvm/scripts/rvm" ]] ; then source "$HOME/.rvm/scripts/rvm" ; fi
-
 cuke() {
   local file="$1"
   shift
