@@ -100,6 +100,7 @@ gref() {
   command git --no-pager diff --cached --stat | command grep "|\s*0$" | awk '{system("command git reset " $1)}'
 }
 
+alias ga='git add'
 alias gap='git add -p'
 alias gnap='git add -N --ignore-removal . && gap && gref'
 alias glp='git log -p'

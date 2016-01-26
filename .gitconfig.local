@@ -3,3 +3,6 @@
 [user]
 	email = me@trdarr.com
 	name = "Thomas Darr"
+[alias]
+	fucked = reset --hard HEAD
+	welp = clean -df
