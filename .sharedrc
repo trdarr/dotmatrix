@@ -132,3 +132,7 @@ fi
 
 which rbenv > /dev/null && eval "$(rbenv init -)"
 which vault > /dev/null && . "$( vault --initpath )"
+
+if [ -f "$HOME/.venvburrito/startup.sh" ]; then
+    . "$HOME/.venvburrito/startup.sh"
+fi
