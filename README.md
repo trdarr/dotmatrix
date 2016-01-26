@@ -29,6 +29,23 @@ bin/install
 bin/vimbundles.sh
 ```
 
+
+Updating
+--------
+
+This might work!
+
+```zsh
+cd ~/.dotmatrix
+
+# Once
+git remote add hashrocket https://github.com/hashrocket/dotmatrix
+
+# Every time
+bin/upgrade
+bin/vimbundles.sh
+```
+
 [brainsik/virtualenv-burrito]: https://github.com/brainsik/virtualenv-burrito
 [chriskempson/base16-shell]: https://github.com/chriskempson/base16-shell
 [eighties]: https://chriskempson.github.io/base16/#eighties
