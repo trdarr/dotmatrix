@@ -130,12 +130,7 @@ if [ "$(uname)" = Darwin -a "$(command -v vim)" = /usr/bin/vim ]; then
   [ -f "$HOME$bettervim" ] && alias vim="$HOME$bettervim"
 fi
 
-which rbenv > /dev/null && eval "$(rbenv init -)"
 which vault > /dev/null && . "$( vault --initpath )"
-
-if [ -f "$HOME/.venvburrito/startup.sh" ]; then
-    . "$HOME/.venvburrito/startup.sh"
-fi
 
 BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL

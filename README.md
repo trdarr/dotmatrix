@@ -14,9 +14,8 @@ Differences
 -----------
 
 * Adds [jcoglan/vault][] tab-completion.
-* Uses [brainsik/virtualenv-burrito][].
 * Uses [chriskempson/base16-shell][] ([eighties][], specifically).
-* Uses [rbenv][] instead of [RVM][].
+* Removes [RVM][].
 
 
 Installation
@@ -46,10 +45,8 @@ bin/upgrade
 bin/vimbundles.sh
 ```
 
-[brainsik/virtualenv-burrito]: https://github.com/brainsik/virtualenv-burrito
 [chriskempson/base16-shell]: https://github.com/chriskempson/base16-shell
 [eighties]: https://chriskempson.github.io/base16/#eighties
 [hashrocket/dotmatrix]: https://github.com/hashrocket/dotmatrix
 [jcoglan/vault]: https://github.com/jcoglan/vault
-[rbenv]: http://rbenv.org/
 [RVM]: https://rvm.io/
