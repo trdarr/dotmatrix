@@ -31,8 +31,6 @@ tpope/vim-markdown
 tpope/vim-pathogen
 tpope/vim-projectionist
 tpope/vim-ragtag
-tpope/vim-rails
-tpope/vim-rake
 tpope/vim-repeat
 tpope/vim-rsi
 tpope/vim-sensible

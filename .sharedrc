@@ -32,14 +32,6 @@ if command -v hub >/dev/null; then
   }
 fi
 
-twiki () {
-  rake db:migrate && rake db:migrate:redo && rake db:test:prepare
-}
-
-alias sc='rails console'
-alias ss='rails server'
-alias sdbc='rails dbconsole -p'
-
 alias ll='ls -l'
 
 # git_prompt_info accepts 0 or 1 arguments (i.e., format string)

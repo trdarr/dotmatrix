@@ -15,7 +15,7 @@ Differences
 
 * Adds [jcoglan/vault][] tab-completion.
 * Uses [chriskempson/base16-shell][] ([eighties][], specifically).
-* Removes [RVM][].
+* Removes [Rails][], [rake][], and [RVM][].
 
 
 Installation
@@ -49,4 +49,6 @@ bin/vimbundles.sh
 [eighties]: https://chriskempson.github.io/base16/#eighties
 [hashrocket/dotmatrix]: https://github.com/hashrocket/dotmatrix
 [jcoglan/vault]: https://github.com/jcoglan/vault
+[Rails]: http://rubyonrails.org/
+[rake]: https://ruby.github.io/rake/
 [RVM]: https://rvm.io/
