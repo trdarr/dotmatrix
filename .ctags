@@ -1,14 +1,13 @@
+--exclude=.git
+
+--exclude=.venv
+--python-kinds=-i
+
 --exclude=.gem
---exclude=node_modules
-
 --regex-ruby=/(^|[:;])[ \t]*([A-Z][[:alnum:]_]+) *=/\2/c,class,constant/
-
 --regex-ruby=/(^|;)[ \t]*(has_many|belongs_to|has_one|has_and_belongs_to_many)\(? *:([[:alnum:]_]+)/\3/f,function,association/
-
 --regex-ruby=/(^|;)[ \t]*(named_)?scope\(? *:([[:alnum:]_]+)/\3/f,function,named_scope/
-
 --regex-ruby=/(^|;)[ \t]*expose\(? *:([[:alnum:]_]+)/\2/f,function,exposure/
-
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2/f,function,aasm_event/
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2!/f,function,aasm_event/
 --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2?/f,function,aasm_event/
@@ -26,6 +25,7 @@
 --regex-Go=/var[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/d,var/
 --regex-Go=/type[ \t]+([a-zA-Z_][a-zA-Z0-9_]+)/\1/d,type/
 
+<<<<<<< HEAD
 --langdef=Clojure
 --langmap=Clojure:.clj.cljs.cljx
 --regex-clojure=/\([ \t]*create-ns[ \t]+([-[:alnum:]*><+!_:\/.?]+)/\1/n,namespace/
@@ -73,3 +73,11 @@
 --regex-Elixir=/^[ \t]*defprotocol[ \t]+([A-Z][a-zA-Z0-9_]*\.)*([A-Z][a-zA-Z0-9_?!]*)/\2/p,protocols,protocols (defprotocol...)/
 --regex-Elixir=/^[ \t]*Record\.defrecord[ \t]+:([a-zA-Z0-9_]+)/\1/r,records,records (defrecord...)/
 --regex-Elixir=/^[ \t]*test[ \t]+\"([a-z_][a-zA-Z0-9_?! ]*)\"*/\1/t,tests,tests (test ...)/
+=======
+--langmap=javascript:+.jsx
+--exclude=node_modules
+--regex-javascript=/[ \t.]([A-Z][A-Z0-9._$]+)[ \t]*[=:][ \t]*([0-9"'\[\{]|null)/\1/n,constant/
+--regex-javascript=/['"]*([A-Za-z$][A-Za-z0-9_$]+)['"]*:[ \t]*function[ \t]*\(/\1/m,method/
+--regex-javascript=/([A-Za-z0-9_$]+)\[["']([A-Za-z0-9_$]+)["']\][ \t]*=[ \t]*function[ \t]*\(/\2/m,method/
+--regex-javascript=/const[ \t]*([A-Za-z0-9_$]+)[ \t]*=/\1/c,definition/
+>>>>>>> some shit
